@@ -1,0 +1,128 @@
+/* General Sidebar Styling */
+.sidebar {
+    width: 260px;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    position: relative;
+    transition: width 0.3s ease;
+  }
+  
+  .sidebar.collapsed {
+    width: 70px;
+  }
+  
+  .logo {
+    background-color: #020202;
+    color: #FFCA20;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    margin-left: 5px;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .menu-item .menu-text {
+    margin-left: 5px;
+  }
+  
+  .menu-icon {
+    font-size: 20px;
+  }
+  
+  .sidebar.collapsed .menu-item .menu-text {
+    display: none;
+  }
+  
+  .menu-item:hover {
+    background-color: #ffcb2083;
+    color: #000;
+    border-radius: 10px;
+  }
+  
+  .submenu {
+    list-style: none;
+    padding-left: 30px;
+  }
+  
+  .submenu li {
+    padding: 10px 0;
+  }
+  
+  .submenu li a {
+    color: #aaa;
+    text-decoration: none;
+  }
+  
+  .submenu li a:hover {
+    color: #ffcb2042;
+  }
+  
+  .footer-icons {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    background-color: #111;
+    border-top: 1px solid #333;
+  }
+  
+  .footer-icons .footer-icon {
+    font-size: 20px;
+    color: #aaa;
+    cursor: pointer;
+  }
+  
+  .footer-icons .footer-icon:hover {
+    color: #FFCA20;
+  }
+  
+  /* Sidebar Toggle */
+  .sidebar-toggle {
+    position: absolute;
+    top: 10px;
+    right: -20px;
+    width: 40px;
+    height: 40px;
+    background-color: #FFCA20;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .sidebar-toggle .icon-toggle {
+    font-size: 18px;
+    color: #000;
+    transition: transform 0.3s ease;
+  }
+  
+  .sidebar-toggle .menu-icon {
+    transform: rotate(0);
+  }
+  
+  .sidebar-toggle .close-icon {
+    transform: rotate(180deg);
+  }
+  
